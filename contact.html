@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <span id="page-topper"></span>
+        <nav class="nav">
+            <ol class="nav-list">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ol>
+        </nav>
+    </header>
+    <section class="contact">
+        <article class="contact-form">
+            <form>
+                <fieldset>
+                    <label>Name
+                        <input type="text" name="name" placeholder="Name Here" autocomplete="given-name">
+                    </label>
+                    <label>Email Address
+                        <input type="email" name="email" placeholder="name@gmail.com" autocomplete="email">
+                    </label>
+                    <label>Reason For Contact
+                        <input type="text" name="reason" placeholder="Text Here">
+                    </label>
+                    <label>Comment
+                        <input type="text" name="comment" placeholder="Comment">
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+</body>
+</html>
