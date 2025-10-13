@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header id="header-custom">
         <span id="page-topper"></span>
-        <nav class="nav">
+        <nav id="nav">
             <ol class="nav-list">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
@@ -39,12 +39,16 @@
         <article class="blog" data-blog-number="2">
             <h1>Good Topology</h1>
             <h3>Vivek Kilari | <time datetime="2025-05-10 22:43">10-05-2025 10:43PM</time></h3>
-            <p>I'm a game programmer but alongside my programming abilities, I've been growing as
-            an artist over the years. I have practiced 2D art casually for many years now, but
-            this past Summer and this semester I've started learning the skill of 3D art.</p>
-            <p>There are a lot of difficult lessons and skills to learn in 3D modelling, but one
-            of the more interesting things to wrap your head around is the idea of toplogoy, and
-            more specifically having "good" topology.</p>
+            <div id="two-colum-wrapper">
+                <div id="two-column">
+                    <p>I'm a game programmer but alongside my programming abilities, I've been growing as
+                    an artist over the years. I have practiced 2D art casually for many years now, but
+                    this past Summer and this semester I've started learning the skill of 3D art.</p>
+                    <p>There are a lot of difficult lessons and skills to learn in 3D modelling, but one
+                    of the more interesting things to wrap your head around is the idea of toplogoy, and
+                    more specifically having "good" topology.</p>
+                </div>
+            </div>
             <img width="40%" height="80%" 
                 src="https://cmuanimation.weebly.com/uploads/2/4/1/9/2419399/head-topo_orig.png"
                 class="media"></img>
