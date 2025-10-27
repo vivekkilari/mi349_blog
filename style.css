@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin: 0;
 }
 
@@ -36,7 +37,7 @@ body {
     left: 0;
     top: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 #page-topper {
@@ -52,25 +53,37 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    height: 100px;
 }
 
 .nav-list {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 
     margin: 0 0 0 0;
-    padding: 2rem 3rem 2rem 0;
+    padding: 1vh 3vw;
+
+    height: 100%;
 
     flex-grow: 1;
     list-style: none;
-    gap: 4rem;
 
     background-color: rgb(159 226 191);
 }
 
-.nav-list > li > a {
-    font-size: 3rem;
+.nav-list  li {
+    height: 100%;
+    padding: 0 2rem 0 0;
+    margin: 0.5px 0;
+
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.nav-list  li  a {
+    height: 100%;
+    font-size: 2.5rem;
 }
 
 .blogs {
@@ -78,15 +91,15 @@ body {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 5vh 10vw 0 10vw;
-    width: 80vw;
+    margin: 5vh 0 0 0;
+    width: 100%;
 }
 
 .blog {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    width: 80%;
+    padding: 7vh 7vw;
+    width: 60%;
 }
 
 .blog[data-blog-number="2"] {
@@ -113,11 +126,21 @@ body {
     width: 70%;
 }
 
-.media {
+.media-wrapper 
+{
+    display: flex;
+    width: 70%;
+
+    justify-self: center;
     align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.media {
     margin: 30px 0 30px 0;
-    min-width: 200px;
-    min-height: 200px;
+    width: 70%;
+    object-fit: contain;
 }
 
 .about {
@@ -138,4 +161,53 @@ body {
 .contact-form {
     display: flex;
     padding: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-list li a {
+        font-size: 2rem;
+    }
+
+    #two-column {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .media-wrapper
+    {
+        width: 100%;
+    }
+
+    .blog p {
+        text-align: left;
+        width: 100%;
+    }
+
+    .blog {
+        margin: 0;
+        width: 90%;
+    }
+
+    .blogs {
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #header-custom {
+        position: relative;
+    }
+
+    .nav-list {
+        flex-direction: column;
+
+        padding: 0;
+    }
+
+    .nav-list  li {
+        width: 100%;
+        background-color: rgb(109 206 171);
+    }
 }
